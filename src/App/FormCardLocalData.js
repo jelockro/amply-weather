@@ -10,7 +10,13 @@ class FormCardLocalData extends Component {
                     <div className="p-2 bd-highlight">{this.props.state}</div>
                     <div className="p-2 bd-highlight">Flex item 3</div>
                 </div>
-            </div>       
+                <div className="d-flex flex-row-reverse bd-highlight">
+                    <div className="p-2 bd-highlight">Flex item 1</div>
+                    <div className="p-2 bd-highlight">Flex item 2</div>
+                    <div className="p-2 bd-highlight">Flex item 3</div>
+                </div>  
+            </div>
+     
  
         )
     }
