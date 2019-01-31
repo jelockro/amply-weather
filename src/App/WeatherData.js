@@ -44,19 +44,20 @@
 //     };
   
 //     xhr.send();
-//   }
-export default function getWeatherData() {
-    fetch('https://j9l4zglte4.execute-api.us-east-1.amazonaws.com/api/ctl/weather', 
+export let getWeather = () => new Promise((resolve) => {
+        fetch('https://j9l4zglte4.execute-api.us-east-1.amazonaws.com/api/ctl/weather', 
         {
             method: 'GET',
             mode: 'cors',
-            credentials: 'include'
         })
         .then( response => {
-            let obj = JSON.parse(response);
-            console.log(obj.city);
-            console.log(obj.state);
-            console.log(obj.temperature)
+            return response.json();
+        }).then(obj => {
+            console.log(obj);
+            console.log(obj.today.state);
+            console.log(obj.today.city);
+            console.log(obj.today.temperature)
             console.log(obj.iconLink)
+            resolve([obj.today.city, obj.today.state]);
         }).catch(e => console.log("it didn't work: " + e));
-    }
+    });
