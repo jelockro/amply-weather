@@ -58,12 +58,15 @@ export let getWeather = () => new Promise((resolve) => {
             // console.log(obj.today.city);
             // console.log(obj.today.temperature)
             // console.log(obj.iconLink)
-            resolve(
-                [obj.today.city, 
+            let returnList = [obj.today.city, 
                 obj.today.state, 
                 obj.today.temperature, 
                 obj.today.description,
-                obj.today.iconLink
-                ]);
+                obj.today.iconLink,
+                obj.today.highTemperature,
+                obj.today.lowTemperature
+                ];
+            console.log(returnList);
+            resolve(returnList)
         }).catch(e => console.log("it didn't work: " + e));
     });

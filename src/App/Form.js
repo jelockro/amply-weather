@@ -3,8 +3,9 @@ import React, { Component } from 'react';
 class Form extends Component{
     render(){   
         return (
-       
+        
         <form action="#">
+            
             <div className ="form-group">
                 <label htmlFor="zip" className="float-left">Please Enter Zip Code:</label>
                 <input className="form-control" type="text" id="zip" placeholder="example: 66061" required></input>
