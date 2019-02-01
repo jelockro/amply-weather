@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import FormCardJumbotron from './FormCardJumbotron';
-import * as service from './WeatherData';
+import FormCardJumbotron from './Components/FormCardJumbotron';
+import * as service from './Controllers/WeatherData';
 
 class App extends Component {
   constructor() {

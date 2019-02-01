@@ -70,18 +70,26 @@ body {
   grid-auto-rows: 1fr 1fr 1fr 1fr;
   
 }
+.box-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center 
+}
 .box3 {
   grid-column: 1;
   grid-row: 2;
 }
 .box4 {
-  padding-right: 128px;
-  grid-column: 2 / 4;
+  /* padding-right: 128px; */
+  grid-column: 2;
   grid-row: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center 
 }
 
 #image {
-  float: right;
+  /* float: right; */
   padding-top: 10px;
 }
 
@@ -91,16 +99,24 @@ body {
   /* outline: cyan;
   outline-style: double; */
   grid-row: 2;
-  text-align: left;
-  padding-left: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center 
+
 }
 .box6 {
   /* outline: cyan;
   outline-style: double; */
   grid-row: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center 
 }
 .box7 {
   grid-row: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center 
 }
 
 #dailyCard {
@@ -109,19 +125,25 @@ body {
 }
 
 #highLow {
-  padding-left: 15px;
+  /* padding-left: 15px; */
   font-size: smaller;
-  padding-top: 8px;
-  float: right;
+  margin: 0px;
+  /* float: right; */
 }
 
 #description {
-  padding-left: 30px;
+  /* padding-left: 30px; */
+  margin: 0px;
 }
 #location {
-  margin-top: 13px;
+  /* margin-top: 13px; */
 }
 
 #mainTemp {
   font-size: 3.5rem;
+  margin: 0px;
+}
+
+#citystate {
+  margin: 0px;
 }
