@@ -2,7 +2,7 @@ import React from 'react';
 
 function DailyCard(props) {
     
-        console.log('props in DailyCard are:', props)
+
 
         return(
     

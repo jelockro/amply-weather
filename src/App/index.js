@@ -35,7 +35,6 @@ class App extends Component {
       // // this.setState({highTemp: Math.floor(results[5])});
       // // this.setState({lowTemp: Math.floor(results[6])});
     }).catch(e => console.log('oops: ' + e));
-    console.log(this.state);
 
 
   }
@@ -44,17 +43,8 @@ class App extends Component {
 
     return (
       <div className="App container">
-        {console.log('this is the state of the app: ',  this.state)}
         <FormCardJumbotron 
           state={this.state}
-          // city={this.state.city} 
-          // state={this.state.state} 
-          // currentTemp={this.state.currentTemp}
-          // description={this.state.description}
-          // iconLink={this.state.iconLink}
-          // highTemp={this.state.highTemp}
-          // lowTemp={this.state.lowTemp}
-        
         />
       </div>
     );

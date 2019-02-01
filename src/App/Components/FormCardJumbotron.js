@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import FormCardLocalData from './FormCardLocalData';
 import Form from './Form';
-import DailyCard from './DailyCard';
 class FormCardJumbotron extends Component {
     render() {
         return(
@@ -14,24 +13,10 @@ class FormCardJumbotron extends Component {
                         </div>
                         <div className="row">
                         <FormCardLocalData
-                                // city={this.props.city} 
-                                // state={this.props.state} 
-                                // currentTemp={this.props.currentTemp}
-                                // description={this.props.description}
+                                appState={this.props.state}
                                         
                         />
                         </div>
-                        <DailyCard 
-                                appState={this.props.state}
-                                // iconLink={this.props.iconLink}
-                                // currentTemp={this.props.currentTemp}
-                                // highTemp={this.props.highTemp}
-                                // lowTemp={this.props.lowTemp}
-                                // description={this.props.description}
-                                // city={this.props.city} 
-                                // state={this.props.state} 
-                        />
-
                         <div>
                         <hr className="my-4"></hr>
                         <Form />
