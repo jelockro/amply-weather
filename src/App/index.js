@@ -38,13 +38,14 @@ class App extends Component {
     return (
       <div className="App container">
         <FormCardJumbotron 
-          city={this.state.city} 
-          state={this.state.state} 
-          currentTemp={this.state.currentTemp}
-          description={this.state.description}
-          iconLink={this.state.iconLink}
-          highTemp={this.state.highTemp}
-          lowTemp={this.state.lowTemp}
+          state={this.state}
+          // city={this.state.city} 
+          // state={this.state.state} 
+          // currentTemp={this.state.currentTemp}
+          // description={this.state.description}
+          // iconLink={this.state.iconLink}
+          // highTemp={this.state.highTemp}
+          // lowTemp={this.state.lowTemp}
         
         />
       </div>

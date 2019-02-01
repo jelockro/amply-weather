@@ -14,21 +14,22 @@ class FormCardJumbotron extends Component {
                         </div>
                         <div className="row">
                         <FormCardLocalData
-                                city={this.props.city} 
-                                state={this.props.state} 
-                                currentTemp={this.props.currentTemp}
-                                description={this.props.description}
+                                // city={this.props.city} 
+                                // state={this.props.state} 
+                                // currentTemp={this.props.currentTemp}
+                                // description={this.props.description}
                                         
                         />
                         </div>
                         <DailyCard 
-                                iconLink={this.props.iconLink}
-                                currentTemp={this.props.currentTemp}
-                                highTemp={this.props.highTemp}
-                                lowTemp={this.props.lowTemp}
-                                description={this.props.description}
-                                city={this.props.city} 
-                                state={this.props.state} 
+                                appState={this.props.state}
+                                // iconLink={this.props.iconLink}
+                                // currentTemp={this.props.currentTemp}
+                                // highTemp={this.props.highTemp}
+                                // lowTemp={this.props.lowTemp}
+                                // description={this.props.description}
+                                // city={this.props.city} 
+                                // state={this.props.state} 
                         />
 
                         <div>
