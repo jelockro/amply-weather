@@ -18,11 +18,11 @@ class App extends Component {
     service.getWeather().then((results)=> {
       this.setState({city: results[0]});
       this.setState({state: results[1]});
-      this.setState({currentTemp: results[2]});
+      this.setState({currentTemp: Math.floor(results[2])});
       this.setState({description: results[3]});
       this.setState({iconLink: results[4]});
-      this.setState({highTemp: results[5]});
-      this.setState({lowTemp: results[6]});
+      this.setState({highTemp: Math.floor(results[5])});
+      this.setState({lowTemp: Math.floor(results[6])});
     }).catch(e => console.log('oops: ' + e));
 
   }

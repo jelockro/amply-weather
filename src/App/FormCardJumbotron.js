@@ -27,6 +27,8 @@ class FormCardJumbotron extends Component {
                                 highTemp={this.props.highTemp}
                                 lowTemp={this.props.lowTemp}
                                 description={this.props.description}
+                                city={this.props.city} 
+                                state={this.props.state} 
                         />
 
                         <div>
