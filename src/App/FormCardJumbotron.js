@@ -12,9 +12,8 @@ class FormCardJumbotron extends Component {
                                 </p>
                                 <hr className="my-4"></hr>
                         </div>
-
                         <div className="row">
-                                <FormCardLocalData
+                        <FormCardLocalData
                                         city={this.props.city} 
                                         state={this.props.state} 
                                         currentTemp={this.props.currentTemp}
@@ -22,6 +21,8 @@ class FormCardJumbotron extends Component {
                                         iconLink={this.props.iconLink}
                                 />
                         </div>
+
+
                         <div>
                         <hr className="my-4"></hr>
                         <Form />
