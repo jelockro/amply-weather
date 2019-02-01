@@ -7,7 +7,7 @@ class DailyCard extends Component {
                 <div id="dailyCard" class="wrapper">
                     <div className="box-1"></div>
                     <div className="box-2">
-                        <div id="location">
+                        <div id="location" className="m-auto">
                             <icon className="fa fa-map-marker-alt mb-3"></icon><br></br>
                             <p id="citystate">{this.props.city}, {this.props.state}</p>
                         </div>
