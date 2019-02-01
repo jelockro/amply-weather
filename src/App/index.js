@@ -6,23 +6,29 @@ import * as service from './Controllers/WeatherData';
 class App extends Component {
   constructor() {
     super()
+    
     this.state = {
-      city: 'your_city',
-      state: 'your_state',
-      currentTemp: 'current_temp',
-      description: 'lorem ipsum',
+      city: 'Hometown',
+      state: 'Kansas',
+      currentTemp: '70',
+      description: 'open skies ahead',
       iconLink: '',
-      highTemp: '',
-      lowTemp: ''
+      highTemp: '70',
+      lowTemp: '70'
     };
-    service.getWeather().then((results)=> {
-      this.setState({city: results[0]});
-      this.setState({state: results[1]});
-      this.setState({currentTemp: Math.floor(results[2])});
-      this.setState({description: results[3]});
-      this.setState({iconLink: results[4]});
-      this.setState({highTemp: Math.floor(results[5])});
-      this.setState({lowTemp: Math.floor(results[6])});
+    service.getWeather().then((obj)=> {
+      console.log(obj.today);
+      console.log(typeof obj.today)
+      for (let key in obj.today)  {
+        console.log(key, obj.today[key]);
+      };
+      // this.setState({city: obj.today.city});
+      // // this.setState({state: obj.today.state);
+      // // this.setState({currentTemp: Math.floor(results[2])});
+      // // this.setState({description: results[3]});
+      // // this.setState({iconLink: results[4]});
+      // // this.setState({highTemp: Math.floor(results[5])});
+      // // this.setState({lowTemp: Math.floor(results[6])});
     }).catch(e => console.log('oops: ' + e));
 
   }
