@@ -2,6 +2,7 @@ import React from 'react';
 import DailyCard from './DailyCard';
 
 
+
 function FormCardLocalData(props) {
 
         function check(event){
@@ -23,9 +24,6 @@ function FormCardLocalData(props) {
 
         const styles = {
             textAlign: 'left',
-        }
-        function getNumberOfChecked() {
-            
         }
 
         return( 
@@ -77,14 +75,7 @@ function FormCardLocalData(props) {
                         </div>
                     </div>
                     
-                </div>
-   
- 
-
-                
-                    
-                    
-                
+                </div>                
                 </div>
             
      

@@ -6,8 +6,8 @@ class FormCardJumbotron extends Component {
         return(
                 <div className="jumbotron mt-4">
                         <div>
-                                <h1 className="display-4">Instant Weather Now</h1>
-                                <p className="lead">All the Weather Data you want, and nothing more.
+                                <h1 className="display-4">My Weather</h1>
+                                <p className="lead">All the Weather news you want, and nothing more.
                                 </p>
                                 <hr className="my-4"></hr>
                         </div>
